@@ -1,0 +1,236 @@
+body {
+  color: #752305;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav button {
+  order: 2;
+  flex-basis: 42%;
+  font-weight: 600;
+}
+.shop {
+  order: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  flex-basis: 100%;
+  font-size: 2em;
+}
+.shop img {
+  width: 60px;
+  margin-right: 20px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+section h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2em;
+}
+section .card {
+  width: 100%;
+
+  border-radius: 30px;
+  text-align: center;
+  background-color: #fef7e2;
+  margin: 10px;
+}
+section .card img {
+  width: 100%;
+  border-radius: 30px 30px 0 0px;
+}
+section .card h2 {
+  margin-bottom: 0;
+}
+section .card > div > div p {
+  margin-top: 0;
+}
+section .card > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+section .card button {
+  width: 80%;
+}
+
+button {
+  background-color: #ffdf7f;
+  border: none;
+  padding: 20px;
+  border-radius: 40px;
+  margin: 10px;
+  font-weight: 600;
+  color: #752305;
+}
+button:hover {
+  background-color: #e5c870;
+  border: 1px solid #97844a;
+}
+article h3 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+article h4 {
+  font-weight: 900;
+}
+article p {
+  background-color: #fef7e2;
+}
+article img {
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  nav {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  nav button {
+    order: 0;
+    flex-basis: 1;
+    margin: 0;
+    padding: 20px 3px;
+    margin: 3px;
+  }
+  .shop {
+    order: 0;
+    flex-basis: unset;
+    font-size: 1.6em;
+  }
+  .shop img {
+    width: 45px;
+    margin-right: 10px;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  section h1 {
+    text-align: left;
+    font-size: 3em;
+    width: 100%;
+  }
+  section .card {
+    width: 46%;
+  }
+  #primo {
+    display: none;
+  }
+  article h3 {
+    text-align: left;
+    font-size: 2em;
+  }
+  article div {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+  }
+  header {
+    flex-basis: 15%;
+    margin: 10px;
+    margin-right: 50px;
+  }
+  header nav {
+    flex-direction: column;
+    height: 30%;
+
+    justify-content: space-between;
+  }
+  main {
+    flex-basis: 85%;
+  }
+  nav button {
+    order: 1;
+    flex-basis: unset;
+    flex-grow: 0;
+    margin: 10px;
+    padding: 30px 30px;
+    width: 100%;
+  }
+  .shop {
+    order: 0;
+    flex-basis: unset;
+
+    padding: 20px 10px;
+    margin: 3px;
+  }
+  .shop img {
+    margin-right: 10px;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  section h1 {
+    font-size: 3em;
+  }
+  section .card {
+    width: 29%;
+  }
+  #secondo {
+    display: none;
+  }
+  article h3 {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #primo {
+    display: block;
+  }
+  section .card {
+    width: 22%;
+  }
+  article h3 {
+    font-size: 3em;
+  }
+  article h4 {
+    font-size: 2em;
+  }
+  article p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #secondo {
+    display: block;
+  }
+  section .card {
+    width: 17%;
+  }
+  article > div {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  article > div > div {
+    order: 1;
+  }
+  article > div > div h4 {
+    margin: 0;
+  }
+}
